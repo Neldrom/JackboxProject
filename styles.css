@@ -1,0 +1,153 @@
+body{
+    background-color: #95E1D3;
+    font-family: 'Comfortaa', cursive;
+}
+h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #F38181;
+    font-family: "Bebas Neue";
+}
+main{
+    background-color: #EAFFD0;
+    margin: 5% 15%;
+    border-radius: 25px;
+}
+@media screen and (max-width:800px) {main{margin: 5% 0}}
+@media screen and (min-width:800px) {main{margin: 5% 15%}}
+p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+#about h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 0 0.5em 0;
+}
+#about{
+    padding:25px;
+}
+
+/* Navigation-Bar */
+
+
+#nav{
+    background-color: #FCE38A;
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.list{
+    display: inline;
+}
+ul {
+    list-style-type: none;
+    margin: auto;
+    margin-right: 5%;
+    display: inline;
+    padding:0;
+}
+li{
+    display: inline;
+}
+nav{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+}
+nav a{
+    text-decoration: none;
+    float: right;
+    padding: 14px 16px;
+    color: #F38181;
+    font-size: 1.5rem;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width:560px){
+    ul{
+        margin:0;
+        text-align: center;
+    }
+    li{
+        display: block !important;
+    }
+    li a{
+        text-align: center !important;
+    }
+}
+@media screen and (min-width:560px){
+    li{display: inline;}
+    
+    li a{
+        text-align: right !important;
+    }
+    ul{
+        margin-right: 5%;
+    }
+}
+
+/* Games section */
+#games{
+    width:100%;
+    padding: 10px;
+    border-style: groove;
+    border-color:#FCE38A;
+}
+#games th,td{
+    text-align: center;
+}
+tr:nth-child(even){
+    background:#FCE38A ;
+}
+#gamesHeader{
+    margin-bottom: 10px;
+}
+
+/* Game Generator */
+.divGen{
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 5% 0;
+}
+.selectAll{
+    margin-right: 10%;
+}
+#selectText{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.refresh{
+    margin-left: 10%;;
+}
+button{
+    background-color: #FCE38A;
+    border-radius: 12px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    transition: 200ms;  
+    padding:2% 5% 2% 5%;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation; 
+}
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+  outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+}
+
+.generate:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JackBox Picker</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+</head>
+
+<body>
+    
+    <h1>JackBox Party Game Picker</h1>  
+    <main>
+    <div id="nav">
+        <nav>
+            <a href="index.html">Random</a>
+            <a href="about.html">About</a>
+        </nav>
+    </div>
+    <table id="games">
+        <tr id="gamesHeader">
+            <td>Pack</td>
+            <td>Name</td>
+            <td>Players</td>
+            <td>Game Type</td>
+            <td>Select</td>
+        </tr>
+        <tr id="game1">
+            <td>1</td>
+            <td>You don’t know jack</td>
+            <td> 1-4</td>
+            <td>Trivia</td>
+            <td><input type="checkbox" class="select 1"></td>
+        </tr>
+        <tr id="game2">
+            <td>1</td>
+            <td>Drawful</td>
+            <td> 3-8</td>
+            <td>Drawing</td>
+            <td><input type="checkbox" class="select 2"></td>
+        </tr>
+        <tr id="game3">
+            <td>1</td>
+            <td>Word Spud</td>
+            <td> 2-8</td>
+            <td>Other</td>
+            <td><input type="checkbox" class="select 3"></td>
+        </tr>
+        <tr id="game4">
+            <td>1</td>
+            <td>Lie Swatter</td>
+            <td> 1-100</td>
+            <td>Trivia</td>
+            <td><input type="checkbox" class="select 4"></td>
+        </tr>
+        <tr id="game5">
+            <td>1</td>
+            <td>Fibbage</td>
+            <td> 2-8</td>
+            <td>Fill-In-The-Blank/Trivia</td>
+            <td><input type="checkbox" class="select 5"></td>
+        </tr>
+        <tr id="game6">
+            <td>2</td>
+            <td>Fibbage 2</td>
+            <td> 2-8</td>
+            <td>Fill-In-The-Blank/Trivia</td>
+            <td><input type="checkbox" class="select 6"></td>
+        </tr>
+        <tr id="game7">
+            <td>2</td>
+            <td>EarWax</td>
+            <td> 3-8</td>
+            <td>Other</td>
+            <td><input type="checkbox" class="select 7"></td>
+        </tr>
+        <tr id="game8">
+            <td>2</td>
+            <td>Bidiots</td>
+            <td> 3-6</td>
+            <td>Drawing</td>
+            <td><input type="checkbox" class="select 8"></td>
+        </tr>
+        <tr id="game9">
+            <td>2</td>
+            <td>Quiplash</td>
+            <td> 3-8</td>
+            <td>Fill-In-The-Blank</td>
+            <td><input type="checkbox" class="select 9"></td>
+        </tr>
+        <tr id="game10">
+            <td>2</td>
+            <td>Bomb Corp.</td>
+            <td> 1-4</td>
+            <td>Other</td>
+            <td><input type="checkbox" class="select 10"></td>
+        </tr>
+        <tr id="game11">
+            <td>3</td>
+            <td>Quiplash 2</td>
+            <td> 3-8</td>
+            <td>Fill-In-The-Blank</td>
+            <td><input type="checkbox" class="select 11"></td>
+        </tr>
+        <tr id="game12">
+            <td>3</td>
+            <td>Trivia Murder Party</td>
+            <td> 1-8</td>
+            <td>Trivia</td>
+            <td><input type="checkbox" class="select 12"></td>
+        </tr>
+        <tr id="game13">
+            <td>3</td>
+            <td>Guesspionage</td>
+            <td> 2-8</td>
+            <td>Trivia</td>
+            <td><input type="checkbox" class="select 13"></td>
+        </tr>
+        <tr id="game14">
+            <td>3</td>
+            <td>Fakin` It!</td>
+            <td> 3-6</td>
+            <td>Other</td>
+            <td><input type="checkbox" class="select 14"></td>
+        </tr>
+        <tr id="game15">
+            <td>3</td>
+            <td>Tee K.O.</td>
+            <td> 3-8</td>
+            <td>Drawing</td>
+            <td><input type="checkbox" class="select 15"></td>
+        </tr>
+        <tr id="game16">
+            <td>4</td>
+            <td>Fibbage 3</td>
+            <td> 2-8</td>
+            <td>Fill-In-The-Blank/Trivia</td>
+            <td><input type="checkbox" class="select 16"></td>
+        </tr>
+        <tr id="game17">
+            <td>4</td>
+            <td>Survive the Internet</td>
+            <td> 3-8</td>
+            <td>Fill-In-The-Blank</td>
+            <td><input type="checkbox" class="select 17"></td>
+        </tr>
+        <tr id="game18">
+            <td>4</td>
+            <td>Monster Seeking Monster</td>
+            <td> 3-7</td>
+            <td>Other</td>
+            <td><input type="checkbox" class="select 18"></td>
+        </tr>
+        <tr id="game19">
+            <td>4</td>
+            <td>Bracketeering</td>
+            <td> 3-16</td>
+            <td>Fill-In-The-Blank</td>
+            <td><input type="checkbox" class="select 19"></td>
+        </tr>
+        <tr id="game20">
+            <td>4</td>
+            <td>Civic Doodle</td>
+            <td> 3-8</td>
+            <td>Drawing</td>
+            <td><input type="checkbox" class="select 20"></td>
+        </tr>
+        <tr id="game21">
+            <td>5</td>
+            <td>You don’t know jack 2</td>
+            <td> 1-8</td>
+            <td>Trivia</td>
+            <td><input type="checkbox" class="select 21"></td>
+        </tr>
+        <tr id="game22">
+            <td>5</td>
+            <td>Split the Room</td>
+            <td> 3-8</td>
+            <td>Fill-In-The-Blank</td>
+            <td><input type="checkbox" class="select 22"></td>
+        </tr>
+        <tr id="game23">
+            <td>5</td>
+            <td>Mad Verse City</td>
+            <td> 3-8</td>
+            <td>Fill-In-The-Blank</td>
+            <td><input type="checkbox" class="select 23"></td>
+        </tr>
+        <tr id="game24">
+            <td>5</td>
+            <td>Zeeple Dome</td>
+            <td> 1-6</td>
+            <td>Other</td>
+            <td><input type="checkbox" class="select 24"></td>
+        </tr>
+        <tr id="game25">
+            <td>5</td>
+            <td>Patentily Stupdi</td>
+            <td> 3-8</td>
+            <td>Drawing</td>
+            <td><input type="checkbox" class="select 25"></td>
+        </tr>
+    </table>
+    <div class="divGen">
+        <button type="submit" class="selectAll">Select All</button>
+        <button type="submit" class="generate">Generate</button>
+        <button type="submit" class="refresh">Refresh</button> 
+    </div>
+    </main>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+
+</html>
