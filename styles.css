@@ -13,13 +13,14 @@ main{
     background-color: #EAFFD0;
     margin: 5% 15%;
     border-radius: 25px;
+    overflow-x: auto;
 }
 @media screen and (max-width:800px) {
     main{
-        margin: 5% 0;
+        margin: 5% auto;
     }; 
     #games{
-        padding: 0px;
+        padding:0px;
     }
 }
 
@@ -74,7 +75,6 @@ nav a:hover{
 /* Games section */
 #games{
     width:100%;
-    padding: 10px;
     border-style: groove;
     border-color:#FCE38A;
 }
@@ -122,8 +122,3 @@ button:not(:disabled):hover {
   background: #f4e603;
   box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
 }
-/*
-.generate:disabled {
-  filter: saturate(0.2) opacity(0.5);
-  cursor: not-allowed;
-}*/
